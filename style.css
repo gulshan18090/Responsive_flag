@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 50vw; /* Ensure the 1:2 aspect ratio (width is double the height) */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+}
+
+.blue {
+    display: flex;
+    background: #00B5E2;
+    width: 100%;
+    height: calc(1/3 * 50vw);  
+}
+
+.red {
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    background: #EF3340;
+    width: 100%;
+    height: calc(1/3 * 50vw);
+}
+
+.crescentstar{
+    width: calc(2/5 * 50vw);   
+    height: calc(3/10 * 50vw);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.crescent {
+    float: left;
+    width: calc(3/10 * 50vw);   
+    height: calc(3/10 * 50vw);
+    border-radius: 50%;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    background: white;
+    position: relative;                            
+}
+
+.crescent-circle {
+    width: calc(1/4 * 50vw);   
+    height: calc(1/4 * 50vw);
+    border-radius: 50%;
+    background: #EF3340;
+    position: absolute;
+    transform: translateX(calc(1/30*50vw));
+}
+
+.star {
+    display: flex;
+    width: calc(1/6 * 50vw);   
+    height: calc(1/6 * 50vw);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    align-items: center;
+    justify-content: center;    
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: calc(1/57 * 50vw) solid transparent;
+    border-right: calc(1/57 * 50vw) solid transparent;
+    border-bottom: calc(1/20 * 50vw) solid white;
+    z-index: 3;
+    transform: translateY(calc(-1/17 * 50vw));
+    rotate: var(--rotation)
+}
+
+.star-circle {
+    display: flex;
+    width: calc(1/12 * 50vw);   
+    height: calc(1/12 * 50vw);
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    z-index: 3;
+}
+
+.green {
+    display: flex;
+    background: #509E2F;
+    width: 100%;
+    height: calc(1/3 * 50vw);
+}
+
+.i1 {
+    --rotation: 0deg
+}
+
+.i2 {
+    --rotation: 45deg
+}
+
+.i3 {
+    --rotation: 90deg
+}
+
+.i4 {
+    --rotation: 135deg
+}
+
+.i5 {
+    --rotation: 180deg
+}
+
+.i6 {
+    --rotation: 225deg
+}
+
+.i7 {
+    --rotation: 270deg
+}
+
+.i8 {
+    --rotation: 315deg
+}
